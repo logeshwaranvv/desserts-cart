@@ -1,0 +1,298 @@
+body {
+  background-color: hsl(20, 50%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Red Hat Text';
+  padding: 30px 0px;
+  margin: 0px;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media ( width >= 1000px ) {
+  .desserts-container {
+    display: grid !important;
+    grid-template-columns: 300px 300px 300px;
+  }
+  .your-cart {
+    margin-top: 32px;
+    flex: 1;
+    max-width: 400px;
+  }
+}
+@media ( width >= 1200px ) {
+  .container {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.desserts-head {
+  text-align: left;
+  p {
+    font-size: 32px;
+    margin: 10px 0px;
+    color: hsl(14, 65%, 9%);
+    font-weight: 900;
+  }
+}
+.desserts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dessert {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.image-container {
+  width: 100%;
+  border-radius: 12px;
+  position: relative;
+}
+.image {
+  border-radius: 12px;
+  width: 100%;
+}
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.add-to-cart-btn {
+  cursor: pointer;
+  padding: 0px 20px;
+  background-color: white;
+  border: 1px solid hsl(7, 20%, 60%);
+  border-radius: 32px;
+  display: flex;
+  font-family: 'Red Hat Text';
+  gap: 10px;
+  font-weight: 600;
+}
+.dessert-details {
+  margin-top: 10px;
+  text-align: left;
+  p {
+    margin: 4px;
+  }
+}
+.category {
+  color: hsl(12, 20%, 44%);
+  font-size: 12px;
+}
+.name {
+  color: hsl(14, 65%, 9%);
+  font-size: 14px;
+  font-weight: 600;
+}
+.price {
+  color: hsl(14, 86%, 42%);
+  font-size: 14px;
+  font-weight: 600;
+}
+.your-cart {
+  margin: 20px 0px;
+  width: 300px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 12px;
+}
+.your-cart-head {
+  p {
+    font-size: 24px;
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+    margin-left: 20px;
+  }
+}
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.control-btn {
+  width: 150px;
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Red Hat Text';
+  color: white;
+  cursor: pointer;
+}
+.control {
+  margin: 0px 10px 0px 10px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-items {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.amount-details {
+  margin: 0px 12px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-right: 20px; */
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.details {
+  margin: 16px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.calculation-div {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  p {
+    margin: 3px;
+  }
+}
+#name {
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0px;
+}
+.count {
+  color: hsl(14, 86%, 42%);
+  font-weight: 700;
+  font-size: 12px;
+}
+.price-in-cart {
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+}
+.sub-price {
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+  font-size: 12px;
+}
+.clear-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid hsl(7, 20%, 60%);
+  color: gray;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+}
+#totalCost {
+  font-size: 18px;
+  font-weight: 700;
+}
+.carbon-neutral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  padding: 6px 0px;
+  gap: 8px;
+  background-color: hsl(13, 31%, 94%);
+}
+.carb-neu-font {
+  font-weight: 600;
+}
+.confirm-order {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confirm-order-btn {
+  width: 90%;
+  background-color: hsl(14, 86%, 42%);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-family: 'Red Hat Text';
+  p {
+    margin: 12px;
+    font-size: 12px;
+  }
+}
+
+.order-confirmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.16);
+  align-items: center;
+  justify-content: center;
+}
+@media ( width <= 500px ) {
+  .order-confirmed {
+    align-items: end;
+  }
+}
+.order-confirmed-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+}
+.order-details {
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 12px;
+  padding: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.start-new-order {
+  width: 100%;
+  button {
+    width: 100%;
+    border-radius: 24px;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    padding: 12px 12px;
+    color: white;
+    font-family: 'Red hat text';
+  }
+}
