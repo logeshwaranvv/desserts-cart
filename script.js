@@ -148,6 +148,7 @@ function order() {
           </div>`;
   }
   const orderTotal = document.querySelector('.confirm-order-total');
+  orderTotal.innerHTML = '';
 
     orderTotal.innerHTML += 
         `<div class="order-total">
